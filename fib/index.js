@@ -11,14 +11,17 @@
 function memoize(fn) {
   const cache = {};
 
-  return function (...args) {
+  function retrieveOrCalculate(...args) {
     if (cache[args]) return cache[args];
 
+    // this로 retrieveOrCalculate의 this를, arguments로 retrieveOrCalculate의 args를 줘서 slowFib를 호출한다.
     const result = fn.apply(this, args);
     cache[args] = result;
 
     return result;
-  };
+  }
+
+  return retrieveOrCalculate;
 }
 
 function slowFib(n) {
@@ -28,7 +31,9 @@ function slowFib(n) {
 }
 
 const fib = memoize(slowFib);
+
 fib(6);
+
 module.exports = fib;
 
 // // O(n^2)
