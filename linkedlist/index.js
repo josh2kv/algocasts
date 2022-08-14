@@ -169,6 +169,16 @@ class LinkedList {
 
     previous.next = new Node(data, previous.next);
   }
+
+  forEach(fn) {
+    let node = this.head;
+    let counter = 0;
+    while (node) {
+      fn(node, counter);
+      node = node.next;
+      counter++;
+    }
+  }
 }
 
 const l = new LinkedList();
