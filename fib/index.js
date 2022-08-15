@@ -8,31 +8,46 @@
 // Example:
 //   fib(4) === 3
 
-function memoize(fn) {
-  const cache = {};
+// function memoize(fn) {
+//   const cache = {};
 
-  function retrieveOrCalculate(...args) {
-    if (cache[args]) return cache[args];
+//   function retrieveOrCalculate(...args) {
+//     if (cache[args]) return cache[args];
 
-    // this로 retrieveOrCalculate의 this를, arguments로 retrieveOrCalculate의 args를 줘서 slowFib를 호출한다.
-    const result = fn.apply(this, args);
-    cache[args] = result;
+//     // this로 retrieveOrCalculate의 this를, arguments로 retrieveOrCalculate의 args를 줘서 slowFib를 호출한다.
+//     const result = fn.apply(this, args);
+//     cache[args] = result;
 
-    return result;
+//     return result;
+//   }
+
+//   return retrieveOrCalculate;
+// }
+
+// function slowFib(n) {
+//   if (n < 2) return n;
+
+//   return fib(n - 1) + fib(n - 2);
+// }
+
+// const fib = memoize(slowFib);
+
+// fib(6);
+
+function* fibonacciSequence() {
+  let x = 0,
+    y = 1;
+  for (;;) {
+    yield y;
+    [x, y] = [y, x + y]; // Note: destructuring assignment
   }
-
-  return retrieveOrCalculate;
 }
 
-function slowFib(n) {
-  if (n < 2) return n;
-
-  return fib(n - 1) + fib(n - 2);
+function fib(n) {
+  for (let f of fibonacciSequence()) {
+    if (n-- <= 1) return f;
+  }
 }
-
-const fib = memoize(slowFib);
-
-fib(6);
 
 module.exports = fib;
 
