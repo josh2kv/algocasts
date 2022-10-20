@@ -6,11 +6,8 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// 1. array.reverse()
-// 2. for of
-// 3. array.reduce()
 function reverse(str) {
-    return str.split("").reduce((acc, cur) => cur + acc, "");
+  // 1 (2022-10-20)
 }
 
 module.exports = reverse;
