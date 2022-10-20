@@ -13,24 +13,7 @@
 //   buzz
 
 function fizzBuzz(n) {
-  for (let i = 1; i <= n; i++) {
-    if (i % 5 === 0 && i % 3 === 0) {
-      console.log('fizzbuzz');
-      continue;
-    }
-
-    if (i % 5 === 0) {
-      console.log('buzz');
-      continue;
-    }
-
-    if (i % 3 === 0) {
-      console.log('fizz');
-      continue;
-    }
-
-    console.log(i);
-  }
+  // 1 (2022-10-20)
 }
 
 module.exports = fizzBuzz;
