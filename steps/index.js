@@ -17,8 +17,9 @@
 //       '### '
 //       '####'
 
-function steps(n, row = 0, stair = '') {
+function steps(n) {
   // 1 (2022-10-22)
+  // 2 (2022-10-27)
 }
 
 module.exports = steps;
