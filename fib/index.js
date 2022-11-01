@@ -10,6 +10,7 @@
 
 function fib(n) {
   // 1 (2022-10-23)
+  // 2 (2022-10-31)
 }
-console.log(fib(5));
+
 module.exports = fib;
