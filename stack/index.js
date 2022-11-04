@@ -15,17 +15,12 @@ class Stack {
     this.data = [];
   }
 
-  push(record) {
-    this.data.push(record);
-  }
+  // 1 (2022-11-04)
+  push(record) {}
 
-  pop() {
-    return this.data.pop();
-  }
+  pop() {}
 
-  peek() {
-    return this.data[this.data.length - 1];
-  }
+  peek() {}
 }
 
 module.exports = Stack;
