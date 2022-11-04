@@ -14,13 +14,10 @@ class Queue {
     this.data = [];
   }
 
-  add(record) {
-    this.data.unshift(record);
-  }
+  // 1 2022-11-04
+  add(record) {}
 
-  remove() {
-    return this.data.pop();
-  }
+  remove() {}
 }
 
 module.exports = Queue;
