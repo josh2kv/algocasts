@@ -32,7 +32,7 @@ jest 'folder-name'/test.js --watch
 
 - `Math.sign()`⭐
 
-> 💡 parseInt() 와 '+'는 결과가 다를 수 있다
+> 💡 `parseInt()` 와 `+`는 결과가 다를 수 있다
 >
 > ```ts
 > parseInt('02-') // 2
@@ -46,3 +46,8 @@ jest 'folder-name'/test.js --watch
 ### 5. FizzBuzz
 
 - `for(;;)`
+
+### 6. Array Chunking
+
+- `Array.slice()`
+- without `Array.slice()`
