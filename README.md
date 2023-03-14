@@ -23,6 +23,8 @@ jest 'folder-name'/test.js --watch
 
 > 💡 되도록 for loop 대신 for-of or for-in loop를 사용하자
 
+> 📝 string ↔ array: `String.split("separator")` ↔ `Array.join("separator")`
+
 ### 2. Palindromes
 
 - `Array.reverse()`
@@ -51,3 +53,22 @@ jest 'folder-name'/test.js --watch
 
 - `Array.slice()`
 - without `Array.slice()`
+
+### 7. Anagrams
+
+- `buildCharMap()`
+- `Array.sort()`
+
+> 🚨 `Array.foreach()`을 중간에 멈추는 방법은 throw exception뿐
+> There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
+> Early termination may be accomplished with:
+>
+> - A simple loop
+> - A `for...of` loop
+
+> 💡 Regular Expressions(<https://www.datacamp.com/cheat-sheet/regular-expresso>)
+>
+> - `^`: match start of line
+>   - ex) `^r` ▶ ==r==abbit / ==r==accoon
+> - `\w`: match word characters
+>   - ex) `\wee\w` ▶ t==rees== / ==bee4==
