@@ -10,6 +10,9 @@
 function capitalize(str) {
   //  1 (2022-10-20)
   //  2 (2022-10-27)
+  //  3 (2023-03-14)
 }
+
+capitalize('"hello" is an anagram of "llohe"');
 
 module.exports = capitalize;

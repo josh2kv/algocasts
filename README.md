@@ -72,3 +72,22 @@ jest 'folder-name'/test.js --watch
 >   - ex) `^r` ▶ ==r==abbit / ==r==accoon
 > - `\w`: match word characters
 >   - ex) `\wee\w` ▶ t==rees== / ==bee4==
+
+### 8. Sentence Capitalization
+
+- `String.slice()`
+- `for(;;)`
+
+### 9. Printing Steps
+
+### 10. Two Sided Steps - Pyramids
+
+### 11. Find The Vowels
+
+### 12. Enter the Matrix Spiral
+
+### 13. Fibonacci
+
+### 14. Weaving two queues
+
+### 15. Queue from Stack
