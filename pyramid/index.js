@@ -14,8 +14,8 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n, row = 0, stair = '') {
+function pyramid(n) {
   // 1 (2022-10-22)
+  // 2 (2023-03-16)
 }
-
 module.exports = pyramid;

@@ -90,8 +90,15 @@ jest 'folder-name'/test.js --watch
 >
 > - pseudo code solution을 작성하며 연습하기
 > - base case를 먼저 생각하기(recursion이 멈추는 조건)
+> - 셀프호출 시 return 하지 않으면 무한 loop
 >
 ### 10. Two Sided Steps - Pyramids
+
+| Solutions  |  Big O |
+|---|---|
+| table | O(n^2) |
+| recursion | O(n^2) |
+| concatenating| O(n^2) |
 
 ### 11. Find The Vowels
 
