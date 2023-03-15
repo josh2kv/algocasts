@@ -80,6 +80,17 @@ jest 'folder-name'/test.js --watch
 
 ### 9. Printing Steps
 
+| Solutions  |  Big O |
+|---|---|
+| table | O(n^2) |
+| recursion | O(n^2) |
+| `Array.push()` + `Array.join()`| O(n) |
+
+> 💡 recursion 문제 tip
+>
+> - pseudo code solution을 작성하며 연습하기
+> - base case를 먼저 생각하기(recursion이 멈추는 조건)
+>
 ### 10. Two Sided Steps - Pyramids
 
 ### 11. Find The Vowels
