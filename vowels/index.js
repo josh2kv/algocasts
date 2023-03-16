@@ -9,6 +9,12 @@
 
 function vowels(str) {
   // 1 (2022-10-22)
+
+  const reg = /[aeiou]/gi;
+
+  const result = str.match(reg);
+
+  return result ? result.length : 0;
 }
 
 module.exports = vowels;

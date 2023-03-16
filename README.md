@@ -102,6 +102,26 @@ jest 'folder-name'/test.js --watch
 
 ### 11. Find The Vowels
 
+| Solutions  |  Big O |
+|---|---|
+| `Array.includes()` | O(n) |
+| `buildCharMap()` | O(n) |
+| `String.match()` | O(n) |
+
+- string보다 array 사용(string은 multiple character 체크 불가)
+
+> 💡 Regular Expressions
+>
+> - `[]`: match several characters
+>   - ex) `gr[ea]y` ▶ ==gray== / ==grey==
+
+> 📝 `String.prototype.match()`
+> : The match() method retrieves the result of matching a string against a regular expression.>
+>
+>    ```ts
+>    match(regexp: RegExp): RegExpMatchArray | null;
+>    ```
+
 ### 12. Enter the Matrix Spiral
 
 ### 13. Fibonacci
