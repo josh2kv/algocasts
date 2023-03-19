@@ -124,6 +124,10 @@ jest 'folder-name'/test.js --watch
 
 ### 12. Enter the Matrix Spiral
 
+| Solutions  |  Big O |
+|---|---|
+| `spiral row + col` | O(n^2) |
+
 ### 13. Fibonacci
 
 ### 14. Weaving two queues
