@@ -83,7 +83,7 @@ jest 'folder-name'/test.js --watch
 | Solutions  |  Big O |
 |---|---|
 | table | O(n^2) |
-| recursion | O(n^2) |
+| Recursions | O(n^2) |
 | `Array.push()` + `Array.join()`| O(n) |
 
 > 💡 recursion 문제 tip
@@ -126,9 +126,36 @@ jest 'folder-name'/test.js --watch
 
 | Solutions  |  Big O |
 |---|---|
-| `spiral row + col` | O(n^2) |
+| spiral row + col | O(n^2) |
 
 ### 13. Fibonacci
+
+| Solutions  |  Big O |
+|---|---|
+| Dynamic Programming | O(n) |
+| Recursions | O(n^2) |
+| Recursions with memoization 1 | O(n) |
+| Recursions with memoization 2 | O(n) |
+| Generators | O(n) |
+
+> 📝 Dynamic Programming
+> : a technique used in computer science to solve problems by breaking them down into smaller, simpler subproblems, and solving each subproblem only once. The solutions to the subproblems are then stored in memory so that they can be reused when necessary, avoiding redundant computations and improving efficiency.
+>
+- Recursions
+![recursions](assets/fib-recursions--01.jpg)
+- Recursion with memoization 1
+![recursions](assets/fib-recursions--02.jpg)
+![recursions](assets/fib-recursions--03.jpg)
+- update values by destructuring assignment with arrays
+
+```js
+[x, y] = [y, x + y]; 
+⏸
+const newX = y
+const newY = x + y
+x = newX
+y = newY
+```
 
 ### 14. Weaving two queues
 
