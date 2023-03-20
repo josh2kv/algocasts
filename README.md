@@ -142,10 +142,14 @@ jest 'folder-name'/test.js --watch
 > : a technique used in computer science to solve problems by breaking them down into smaller, simpler subproblems, and solving each subproblem only once. The solutions to the subproblems are then stored in memory so that they can be reused when necessary, avoiding redundant computations and improving efficiency.
 >
 - Recursions
+
 ![recursions](assets/fib-recursions--01.jpg)
+
 - Recursion with memoization 1
+
 ![recursions](assets/fib-recursions--02.jpg)
 ![recursions](assets/fib-recursions--03.jpg)
+
 - update values by destructuring assignment with arrays
 
 ```js
@@ -158,5 +162,13 @@ y = newY
 ```
 
 ### 14. Weaving two queues
+
+| Solutions  |  Big O | |
+|---|---|---|
+| `while`| O(n) | n: the total number of elements in both sourceOne and sourceTwo|
+
+- Queue 구현(둘다 맞으나 ➡이 보편적인 듯?)
+  - insert 방향 ➡ : `unshift()` and `pop()`
+  - insert 방향 ⬅ : `push()` and `shift()`
 
 ### 15. Queue from Stack

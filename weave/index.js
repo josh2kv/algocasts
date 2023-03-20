@@ -25,7 +25,8 @@
 const Queue = require('./queue');
 
 function weave(sourceOne, sourceTwo) {
-  // 1 (2022=11-04)
+  // 1 (2022-11-04)
+  // 2 (2023-03-21)
 }
 
 module.exports = weave;
