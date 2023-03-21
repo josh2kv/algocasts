@@ -14,18 +14,13 @@
 
 const Stack = require('./stack');
 
-// 1  2022-11-10
+// 1 2022-11-10
+// 2 2023-03-21
 class Queue {
   constructor() {
     this.first = new Stack();
     this.second = new Stack();
   }
-
-  add(record) {}
-
-  remove() {}
-
-  peek() {}
 }
 
 module.exports = Queue;

@@ -168,7 +168,29 @@ y = newY
 | `while`| O(n) | n: the total number of elements in both sourceOne and sourceTwo|
 
 - Queue 구현(둘다 맞으나 ➡이 보편적인 듯?)
-  - insert 방향 ➡ : `unshift()` and `pop()`
-  - insert 방향 ⬅ : `push()` and `shift()`
+  - insert 방향 ➡ : `Array.unshift()` and `Array.pop()`
+  - insert 방향 ⬅ : `Array.push()` and `Array.shift()`
+
+#### Queue
+
+| Solutions  |  Big O
+|---|---|
+| `add`| `Array.unshift()`: O(n), `Array.push()`: O(1) |
+| `remove`|`Array.pop()`: O(1), `Array.shift()`: O(n) |
+| `peek`| O(1) |
 
 ### 15. Queue from Stack
+
+| Solutions  |  Big O
+|---|---|
+| `add`| O(1) |
+| `remove`| O(n) |
+| `peek`| O(n) |
+
+#### Stack
+
+| Solutions  |  Big O
+|---|---|
+| `push`| O(1) |
+| `pop`| O(1) |
+| `peek`| O(1) |
