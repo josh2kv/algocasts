@@ -194,3 +194,14 @@ y = newY
 | `push`| O(1) |
 | `pop`| O(1) |
 | `peek`| O(1) |
+
+### 16. Linked List
+
+- index = 0 : `this.head`
+
+> 💡 `null` vs `undefined`
+>
+> - index에 해당하는 node가 없을 경우 return 값
+>   - `LinkedList.getAt(index)`: `null` (값을 요청함 👉 값이 없다)
+>   - `LinkedList.removeAt(index)`: `undefined` (액션을 요청함 👉 아무 것도 하지 않았다)
+>
