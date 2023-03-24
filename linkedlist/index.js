@@ -9,7 +9,7 @@ class Node {
   }
 }
 
-// 1 2023-03-25
+// 1 (2023-03-25)
 class LinkedList {
   constructor() {
     this.head = null;
