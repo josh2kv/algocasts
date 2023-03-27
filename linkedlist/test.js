@@ -151,7 +151,7 @@ describe('InsertLast', () => {
 
     l.insertLast('b');
 
-    expect(l.size()).toEqual(3);
+    expect(l.size()).toEqual(2);
     expect(l.getLast().data).toEqual('b');
   });
 });
@@ -173,7 +173,7 @@ describe('GetAt', () => {
   });
 });
 
-describe.skip('RemoveAt', () => {
+describe('RemoveAt', () => {
   test('removeAt doesnt crash on an empty list', () => {
     const l = new List();
     expect(() => {
@@ -226,7 +226,7 @@ describe.skip('RemoveAt', () => {
   });
 });
 
-describe.skip('InsertAt', () => {
+describe('InsertAt', () => {
   test('inserts a new node with data at the 0 index when the list is empty', () => {
     const l = new List();
     l.insertAt('hi', 0);
@@ -281,7 +281,7 @@ describe.skip('InsertAt', () => {
   });
 });
 
-describe.skip('ForEach', () => {
+describe('ForEach', () => {
   test('applies a transform to each node', () => {
     const l = new List();
 
@@ -301,7 +301,7 @@ describe.skip('ForEach', () => {
   });
 });
 
-describe.skip('for...of loops', () => {
+describe('for...of loops', () => {
   test('works with the linked list', () => {
     const l = new List();
 
