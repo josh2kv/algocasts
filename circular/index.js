@@ -13,13 +13,18 @@
 //   circular(l) // true
 
 // node에 property 추가하지 말 것(ex. node.visited)
+
+// 1 (2023-03-28)
 function circular(list) {
+  if (!list.getFirst()) return false;
+
   let slow = list.getFirst();
   let fast = list.getFirst();
 
   while (fast.next && fast.next.next) {
     slow = slow.next;
     fast = fast.next.next;
+
     if (slow === fast) return true;
   }
 
