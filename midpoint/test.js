@@ -7,6 +7,12 @@ test('Midpoint is a function', () => {
   expect(typeof midpoint).toEqual('function');
 });
 
+test('Midpoint doesnt crash on an empty list', () => {
+  const l = new LinkedList();
+
+  expect(midpoint(l)).toEqual(null);
+});
+
 describe('Midpoint returns the middle node of an odd numbered list', () => {
   test('when the list has 3 elements', () => {
     const l = new LinkedList();
