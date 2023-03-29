@@ -11,21 +11,7 @@
 //    list.insertLast('d');
 //    fromLast(list, 2).data // 'b'
 
-function fromLast(list, n) {
-  let slow = list.getFirst();
-  let fast = list.getFirst();
-  let i = 0;
-  while (i < n) {
-    fast = fast.next;
-    i++;
-  }
-
-  while (fast.next) {
-    fast = fast.next;
-    slow = slow.next;
-  }
-
-  return slow;
-}
+// 1 (2023-03-29)
+function fromLast(list, n) {}
 
 module.exports = fromLast;
