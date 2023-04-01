@@ -11,6 +11,12 @@
 // class.  Contains should accept a 'data' argument
 // and return the Node in the tree with the same value.
 
-class Node {}
+class Node {
+  constructor(data) {}
+
+  insert(data) {}
+
+  contains(data) {}
+}
 
 module.exports = Node;

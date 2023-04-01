@@ -16,13 +16,9 @@ class Node {
     this.children = [];
   }
 
-  add(data) {
-    this.children.push(new Node(data));
-  }
+  add(data) {}
 
-  remove(data) {
-    this.children = this.children.filter(node => node.data !== data);
-  }
+  remove(data) {}
 }
 
 class Tree {
@@ -34,28 +30,10 @@ class Tree {
   // arr의 앞에서부터 parent node를 하나씩 뺌(node에 저장)
   // children이 있으면 하나씩 빼서 arr의 뒤에 붙임
   // 그리고 그 parent는 fn에 넘김
-  traverseBF(fn) {
-    const arr = [this.root];
-
-    while (arr.length) {
-      const node = arr.shift();
-
-      arr.push(...node.children);
-      fn(node);
-    }
-  }
+  traverseBF(fn) {}
 
   // children을 arr의 뒤에 붙이는 대신 앞에 붙임. 나머지 같음
-  traverseDF(fn) {
-    const arr = [this.root];
-
-    while (arr.length) {
-      const node = arr.shift();
-
-      arr.unshift(...node.children);
-      fn(node);
-    }
-  }
+  traverseDF(fn) {}
 }
 
 module.exports = { Tree, Node };

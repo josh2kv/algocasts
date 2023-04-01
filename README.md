@@ -2,6 +2,8 @@
 
 Ace your next Javascript coding interview by mastering data structures and algorithms.
 
+![thumbnail](https://img-c.udemycdn.com/course/240x135/1409142_1879_8.jpg)
+
 - Creator: Stephen Grider
 - Platform: Udemy
 - [Course Link](https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/)
@@ -204,4 +206,24 @@ y = newY
 > - index에 해당하는 node가 없을 경우 return 값
 >   - `LinkedList.getAt(index)`: `null` (값을 요청함 👉 값이 없다)
 >   - `LinkedList.removeAt(index)`: `undefined` (액션을 요청함 👉 아무 것도 하지 않았다)
->
+
+### 17. Find the Midpoint
+
+### 18. Circular Lists
+
+### 19. Step Back From the Tail
+
+### 20. Tree
+
+- node를 추가/삭제하는 method를 data structure에  적용하는 것이 아니라 그 안에 node에 적용함
+  - linked list와 달리  node를 추가/삭제할 때 어떤 node에 적용해야하는지 정해줘야 하기 때문
+
+- `traverseBF(fn)`: parent node를 children node로 치환하여 뒤에 붙이고 parent node를 처리하는 방식(Queue)
+- `traverseDF(fn)`: parent node를 children  node로 치환하여 앞에 붙이고 parent node를 처리하는 방식(Stack)
+
+### 21. Tree Width with Level Width
+
+### 22. Binary Search Trees
+
+- search 할 때는 빠르고 CRUD할 때는 오래 걸리는 것이 database의 index 기능과 비슷
+- 좌우 children에 크기 제한 없으면 그냥 Binary Tree
