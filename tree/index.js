@@ -11,6 +11,7 @@
 // function that gets called with each element in the tree
 
 // 1 (2023-04-05)
+// 2 (2023-04-10)
 class Node {
   constructor(data) {
     this.data = data;
