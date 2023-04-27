@@ -12,6 +12,7 @@
 // Answer: [1, 3, 2]
 
 // 1 (2023-04-05)
+// 2 (2023-04-27)
 function levelWidth(root) {}
 
 module.exports = levelWidth;

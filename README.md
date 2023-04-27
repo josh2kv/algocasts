@@ -218,18 +218,18 @@ y = newY
 - node를 추가/삭제하는 method를 data structure에  적용하는 것이 아니라 그 안에 node에 적용함
   - linked list와 달리  node를 추가/삭제할 때 어떤 node에 적용해야하는지 정해줘야 하기 때문
 
-- `traverseBF(fn)`: parent node를 children node로 치환하여 뒤에 붙이고 parent node를 처리하는 방식(Queue)
-- `traverseDF(fn)`: parent node를 children  node로 치환하여 앞에 붙이고 parent node를 처리하는 방식(Stack)
+- `traverseBF(fn)`: parent node를 children node로 치환하여 뒤에 붙이고 parent node를 처리하는 방식
+- `traverseDF(fn)`: parent node를 children node로 치환하여 앞에 붙이고 parent node를 처리하는 방식
 
 ### 21. Tree Width with Level Width
 
 ### 22. Binary Search Trees
 
-- search 할 때는 빠르고 CRUD할 때는 오래 걸리는 것이 database의 index 기능과 비슷
+- search 할 때는 빠르고 CUD할 때는 오래 걸리는 것이 database의 index 기능과 비슷
 - 좌우 children에 크기 제한 없으면 그냥 Binary Tree
 
 > 🚨 `else if`를 쓰기 싫다면 `if`문 내에서 `return`해야 함
->
+
 ### Sorting Algorithms in the Job Interview
 
 - number로 이루어진 array를 오른차순으로 정렬하는 것

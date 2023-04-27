@@ -12,11 +12,9 @@
 
 // 1 (2023-04-05)
 // 2 (2023-04-10)
+// 3 (2023-04-27)
 class Node {
-  constructor(data) {
-    this.data = data;
-    this.children = [];
-  }
+  constructor(data) {}
 
   add(data) {}
 
@@ -24,9 +22,7 @@ class Node {
 }
 
 class Tree {
-  constructor() {
-    this.root = null;
-  }
+  constructor() {}
 
   traverseBF(fn) {}
 

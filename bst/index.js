@@ -12,6 +12,7 @@
 // and return the Node in the tree with the same value.
 
 // 1 (2023-04-05)
+// 2 (2023-04-27)
 class Node {
   constructor(data) {}
 
