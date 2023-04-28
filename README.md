@@ -230,6 +230,14 @@ y = newY
 
 > 🚨 `else if`를 쓰기 싫다면 `if`문 내에서 `return`해야 함
 
+#### Validating BST
+
+![validate](assets/validate--01.png)
+
+- root node(10)에서 내려가는 방향에 따라(좌우) 조건이 달라짐
+- down to the left: left node는 parent node보다 작기만 하면 되고 얼마나 더 작아지던지 상관없음. 하지만 right node는 parent node보다 크지만 grand parent node보다 더 커져서는 안 됨(grand parent node보다 작아야 함) ▶ max만 더 작아짐
+- down to the right: right node는 parent node보다 크기만 하면 되고 얼마나 더 커지던지 상관없음. 하지만 left node는 parent node보다 작지만 grand parent node보다 더 작아져서는 안 됨(grand parent node보다 커야 함) ▶ min만 더 커짐
+
 ### Sorting Algorithms in the Job Interview
 
 - number로 이루어진 array를 오른차순으로 정렬하는 것
