@@ -4,6 +4,7 @@
 // have methods 'on', 'trigger', and 'off'.
 
 class Events {
+  constructor() {}
   // Register an event handler
   on(eventName, callback) {}
 

@@ -207,6 +207,9 @@ y = newY
 >   - `LinkedList.getAt(index)`: `null` (값을 요청함 👉 값이 없다)
 >   - `LinkedList.removeAt(index)`: `undefined` (액션을 요청함 👉 아무 것도 하지 않았다)
 
+- `this.getAt()`: 다른 method들에서 자주 쓰이기 때문에 반드시 에러없이 짜야함
+- `this.removeAt()`: `this.head`가 없는데 `index`= 0인 경우 고려해야
+
 ### 17. Find the Midpoint
 
 ### 18. Circular Lists

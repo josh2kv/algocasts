@@ -32,9 +32,9 @@ describe.skip('Size', () => {
   test('returns the number of items in the linked list', () => {
     const l = new List();
     expect(l.size()).toEqual(0);
-    l.insertFirst(1);
-    l.insertFirst(1);
-    l.insertFirst(1);
+    l.insertFirst(4);
+    l.insertFirst(3);
+    l.insertFirst(2);
     l.insertFirst(1);
     expect(l.size()).toEqual(4);
   });
@@ -290,18 +290,18 @@ describe.skip('ForEach', () => {
     l.insertLast(3);
     l.insertLast(4);
 
-    l.forEach(node => {
-      node.data += 10;
+    l.forEach((node, i) => {
+      node.data += 10 + i;
     });
 
     expect(l.getAt(0).data).toEqual(11);
-    expect(l.getAt(1).data).toEqual(12);
-    expect(l.getAt(2).data).toEqual(13);
-    expect(l.getAt(3).data).toEqual(14);
+    expect(l.getAt(1).data).toEqual(13);
+    expect(l.getAt(2).data).toEqual(15);
+    expect(l.getAt(3).data).toEqual(17);
   });
 });
 
-describe.skip('for...of loops', () => {
+describe('for...of loops', () => {
   test('works with the linked list', () => {
     const l = new List();
 
