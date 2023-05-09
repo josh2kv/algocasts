@@ -9,6 +9,7 @@ class Node {
 // 1 (2023-03-25)
 // 2 (2023-03-28)
 // 3 (2023-04-30)
+// 4 (2023-05-09)
 class LinkedList {
   constructor() {}
 
