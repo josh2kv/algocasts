@@ -11,7 +11,7 @@ Ace your next Javascript coding interview by mastering data structures and algor
 ## Usage
 
 ```bash
-jest 'folder-name'/test.js --watch
+npx jest 'folder-name'/test.js --watch
 ```
 
 ## Tips
@@ -120,8 +120,8 @@ jest 'folder-name'/test.js --watch
 > 📝 `String.prototype.match()`
 > : The match() method retrieves the result of matching a string against a regular expression.>
 >
->    ```ts
->    match(regexp: RegExp): RegExpMatchArray | null;
+> ```ts
+> match(regexp: RegExp): RegExpMatchArray | null;
 >    ```
 
 ### 12. Enter the Matrix Spiral
